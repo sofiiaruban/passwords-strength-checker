@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { FormControl } from '@angular/forms';
 @Component({
   selector: 'app-password-input',
   templateUrl: './password-input.component.html',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class PasswordInputComponent {
 
+  passwordInputControl = new FormControl('');
   
 }
