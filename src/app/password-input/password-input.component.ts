@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./password-input.component.scss']
 })
 export class PasswordInputComponent {
-
 }
