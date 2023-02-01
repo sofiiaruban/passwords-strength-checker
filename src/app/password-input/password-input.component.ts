@@ -6,7 +6,10 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./password-input.component.scss']
 })
 export class PasswordInputComponent {
-
-  passwordInputControl = new FormControl('');
+  password = new FormControl('');
+  
+  changeHandler() {
+    console.log(this.password.value);
+  }
   
 }
