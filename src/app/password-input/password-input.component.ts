@@ -8,20 +8,15 @@ import { FormControl, SelectControlValueAccessor } from '@angular/forms';
 export class PasswordInputComponent {
   
   password = new FormControl('');
-  blue:string = "blue";
   red: string = "red";
   yellow: string ="yellow";
   green: string  = "green";
   grey:string = "grey";
-  color:string = this.grey;
-  strength: string ="";
   value: any;
   length: number = 0;
   first:string = "";
   second:string = "";
   third: string = "";
-  
-  count:number | undefined;
 
   ngOnInit() {
     this.password.valueChanges.subscribe((value = '')=> {
@@ -72,8 +67,4 @@ export class PasswordInputComponent {
 
 
   }
-}
-
-function setBarColors(count: number | undefined, color: string) {
-  throw new Error('Function not implemented.');
 }
