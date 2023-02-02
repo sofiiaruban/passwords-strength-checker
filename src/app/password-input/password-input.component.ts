@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, SelectControlValueAccessor } from '@angular/forms';
+import { count } from 'rxjs';
 @Component({
   selector: 'app-password-input',
   templateUrl: './password-input.component.html',
@@ -14,9 +15,9 @@ export class PasswordInputComponent {
   grey:string = "grey";
   value: any;
   length: number = 0;
-  first:string = "";
-  second:string = "";
-  third: string = "";
+  first:string = this.grey;
+  second:string = this.grey;
+  third: string = this.grey;
 
   ngOnInit() {
     this.password.valueChanges.subscribe((value = '')=> {
@@ -38,7 +39,7 @@ export class PasswordInputComponent {
         this.first=this.red;
       }
 
-      if(value && value.length >= 8 && letters && numbers) {
+      if(value && value.length >= 8 && (letters && numbers || numbers && symbols || symbols && letters)) {
         this.first=this.yellow;
         this.second=this.yellow;
       }
@@ -49,22 +50,5 @@ export class PasswordInputComponent {
         this.third=this.green;
       }
     })
-  }
-
-  changeHandler(event:Event){
-   
-    // this
-    // console.log(letters);
-    // console.log(numbers);
-    // console.log(symbols);
-
-   //setBarColors(this.count, this.color) {
-   //   for (let i = 0; i < this.sectionList.length; i++) {
-   //     this[sectionList[i]] = color;
-   //   }
-   // }
-
-
-
   }
 }
