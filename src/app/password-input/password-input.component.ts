@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { FormControl, SelectControlValueAccessor } from '@angular/forms';
-import { count } from 'rxjs';
+import { FormControl} from '@angular/forms';
+
 @Component({
   selector: 'app-password-input',
   templateUrl: './password-input.component.html',
