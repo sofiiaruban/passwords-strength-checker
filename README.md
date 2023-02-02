@@ -1,6 +1,7 @@
 <h1> General info </h1>
 
 Password Strength Checker
+
 <h3>Objectives:</h3>
 Create applications to test password strength.
 <h4>The essence of the assignment:</h4>
@@ -19,5 +20,3 @@ Create applications to test password strength.
 </ul>
 <h1>Technology Stack </h1>
 <p align="left"> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/> </a>  &nbsp; <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a>&nbsp;  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p
-
-<h1>Demo</h1>
