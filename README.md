@@ -21,4 +21,4 @@ Create applications to test password strength.
 <h1>Technology Stack </h1>
 <p align="left"> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/> </a>  &nbsp; <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a>&nbsp;  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p
 
-<strong>Let's check out deployment</strong><a>https://sofiiaruban.github.io/passwords-strength-checker/ </a>
+<strong>Let's check out deployment</strong> <a>https://sofiiaruban.github.io/passwords-strength-checker/ </a>
