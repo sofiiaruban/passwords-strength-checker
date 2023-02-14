@@ -8,9 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class PasswordStrengthSectionComponent implements OnInit{
   
-  @Input() first: string;
-  @Input() second:string;
-  @Input() third:string;
+  @Input()
+  first!: string;
+  @Input()
+  second!: string;
+  @Input()
+  third!: string;
   ngOnInit(): void {
   }
 }

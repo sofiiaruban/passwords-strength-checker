@@ -26,9 +26,9 @@ export class PasswordInputComponent {
       const numbers = /[0-9]+/.test(value as string);
       const symbols = regex.test(value as string);
 
-      this.first=this.grey;
-      this.second=this.grey;
-      this.third= this.grey;
+      this.first = this.grey;
+      this.second = this.grey;
+      this.third = this.grey;
 
       if (value && value.length > 0 && value.length < 8) {
         this.first=this.red;
