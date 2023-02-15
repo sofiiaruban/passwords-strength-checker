@@ -26,31 +26,21 @@ export class PasswordStrengthSectionComponent implements OnChanges {
      const numbers = /[0-9]+/.test(this.password||'');
      const symbols = regex.test(this.password||'');
 
-     //this.first = this.grey;
-     //this.second = this.grey;
-     //this.third = this.grey;
      this.getColors(3,this.grey);
 
      if (this.password && this.password.length > 0 && this.password.length < 8) {
       this.getColors(3, this.red);
-       //this.first=this.red;
-       //this.second=this.red;
-       //this.third=this.red;
      } 
      if(this.password && this.password.length >= 8) {
-       this.first=this.red;
-       this.getColors(3,this.grey);
+       this.getColors(1,this.red);
      }
 
      if(this.password && this.password.length >= 8 && (letters && numbers || numbers && symbols || symbols && letters)) {
-       this.first=this.yellow;
-       this.second=this.yellow;
+       this.getColors(2,this.yellow);
      }
 
      if(this.password && this.password.length >= 8 && letters && numbers && symbols) {
-       this.first=this.green;
-       this.second=this.green;
-       this.third=this.green;
+       this.getColors(3, this.green);
      }
   }
 
