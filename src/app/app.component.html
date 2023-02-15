@@ -1,5 +1,7 @@
 <main>
   <h1>Password Strength Checker</h1>
-  <app-password-input></app-password-input>
-  <app-password-strength-section></app-password-strength-section>
+  <section>
+    <app-password-input [formControl]="password"></app-password-input>
+    <app-password-strength-section [password] = "password.valueChanges | async"></app-password-strength-section>
+  </section>
 </main>

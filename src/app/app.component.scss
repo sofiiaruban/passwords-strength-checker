@@ -1,5 +1,7 @@
-
+$bg-white: white;
+$br: 2px solid grey;
 main {
+    
     margin: 0 auto;
     width: 35%;
     max-height: 30%;
@@ -9,6 +11,13 @@ main {
         padding: 2rem 0;
         color:white;
         font-size: 40px;
+    }
+    section {
+        background-color: $bg-white;
+        border: $br;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 2rem;
     }
     
 }
